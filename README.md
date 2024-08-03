@@ -19,7 +19,7 @@ These instructions will help you set up and run the project on your local machin
 
 ### Prerequisites
 
-- Node.js (>= 14.x)
+- Node.js (>= 19.x)
 - npm (>= 6.x)
 
 ### Installation
