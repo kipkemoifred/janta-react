@@ -17,7 +17,7 @@ function App() {
           <Routes>
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/" element={<PrivateRoute component={AddTodo} />} />
+            <Route path="/addTodo" element={<PrivateRoute component={AddTodo} />} />
             <Route path="/todos" element={<PrivateRoute component={TodoList} />} />
           </Routes>
         </div>

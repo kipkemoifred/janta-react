@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTodo } from '../actions/todoActions';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+
 
 const AddTodo = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
   const [text, setText] = useState('');
   const dispatch = useDispatch();
 
@@ -11,7 +14,9 @@ const AddTodo = () => {
     if (text.trim()) {
       dispatch(addTodo(text));
       setText('');
+      navigate('/todos')
     }
+   
   };
 
   return (
